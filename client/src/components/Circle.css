@@ -1,0 +1,18 @@
+.container{
+    background-color: rgb(2, 2, 2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inside{
+    
+
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
