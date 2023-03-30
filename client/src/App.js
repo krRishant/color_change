@@ -6,7 +6,7 @@ const App = () => {
   return (
     
       <Routes>
-        <Route  path='/pallet' element={<Pallet/>} />
+        <Route exact path='/' element={<Pallet/>} />
         <Route path='/circle' element={<Circle />} />
       </Routes>
     

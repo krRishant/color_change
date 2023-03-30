@@ -21,25 +21,27 @@ function Pallet() {
     });
     const html = await response.text();
     console.log(html);
-    // document.documentElement.innerHTML = html;
+    
   }
 
   return (
-    <div className='containerr'>
-      <div className='insidee'>
-        <form onSubmit={handleSubmit}>
-          <label>
-            Select a color:
-          {/* <br></br>
-          <br></br> */}
-            <input type="color" style={{marginLeft:"3rem"}} value={color} onChange={handleChange} />
-          </label>
-          <br></br>
-          <br></br>
-          <button className ="btn" type="submit">Submit</button>
-        </form>
+   
+      <div className='containerr'>
+        <div className='insidee'>
+          <form className='form' onSubmit={handleSubmit}>
+            <label>
+              Select a color:
+            {/* <br></br>
+            <br></br> */}
+              <input type="color" style={{marginLeft:"3rem"}} value={color} onChange={handleChange} />
+            </label>
+            <br></br>
+            <br></br>
+            <button className ="btn" type="submit">Submit</button>
+          </form>
+        </div>
       </div>
-    </div>
+    
   );
 }
 
